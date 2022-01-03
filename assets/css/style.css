@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #d9dcd6;
+}
+
+.header {
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #2a607c;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-size: 48px;
+}
+
+.header h1 .seo {
+  color: #d9dcd6;
+}
+
+hr {
+  display: none;
+  color: white;
+}
+
+/* the div's inside header class became nav on html, so css had to be updated */
+.header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  display: flex;
+}
+
+.header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header nav ul li {
+  margin-left: 25px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+p {
+  font-size: 16px;
+}
+
+#heroPic {
+  height: auto;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.float-left {
+  margin-right: 25px;
+}
+
+.float-right {
+  margin-left: 25px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.content {
+  width: 75%;
+  margin: 20px;
+}
+
+.benefits {
+  margin: 20px;
+  padding: 20px;
+  clear: both;
+  width: 20%;
+  height: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #2589bd;
+}
+
+#search-engine-optimization,
+#social-media-marketing {
+  display: flex;
+  justify-content: center;
+}
+
+#online-reputation-management {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* consolidated the three sections in the aside into one class="indiv-benefit" */
+.indiv-benefit {
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+
+/* consolidated targeting the h3 element in each aside section */
+.indiv-benefit h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* consolidated targeting the img element in each aside section */
+.indiv-benefit img {
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
+}
+
+/* consolidated the three sections in the main into one class="big-idea" */
+.big-idea {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+
+/* consolidated targeting the img element in each main section */
+.big-idea img {
+  max-height: 200px;
+}
+
+/* consolidated targeting the h3 element in each main section */
+.big-idea h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.footer {
+  padding: 30px;
+  clear: both;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+
+.footer h4 {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  main {
+    flex-direction: column;
+  }
+
+  .benefits {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px;
+  }
+
+  .indiv-benefit {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content {
+    width: 100%;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  hr {
+    display: flex;
+    width: 75%;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  .header nav ul {
+    justify-content: center;
+  }
+
+  .header nav ul li {
+    align-self: center;
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .indiv-benefit {
+    width: 100%;
+  }
+
+  .indiv-benefit h3,
+  .indiv-benefit img,
+  .indiv-benefit p {
+    width: 100%;
+    padding: 5px auto;
+  }
+
+  #online-reputation-management, #search-engine-optimization, #social-media-marketing {
+    flex-direction: column;
+  }
+}
