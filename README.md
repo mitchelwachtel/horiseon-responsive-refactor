@@ -1,4 +1,4 @@
-# GT Bootcamp - Code Refractor
+# Horiseon Responsive Refactor
 
 ## Mitchel Wachtel - mitchel.wachtel@gmail.com
 
